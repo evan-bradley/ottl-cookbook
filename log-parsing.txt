@@ -1,0 +1,14 @@
+flowchart LR
+    log0("`
+    body: &quot;{
+        &nbsp;&nbsp;&quot;attributes&quot;: &quot;...&quot;
+        &nbsp;&nbsp;&quot;msg&quot;: &quot;complete&quot;
+}&quot;
+    attributes: {}
+    `")
+    log1("`
+    body: &quot;complete&quot;
+attributes:
+&nbsp;&nbsp;purchase_id: 123
+    `")
+    log0 --> log1

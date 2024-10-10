@@ -1,0 +1,24 @@
+flowchart LR
+    classDef receiver fill:#51517B, stroke:#707399;
+    classDef processor fill:#49496F, stroke:#66688F;
+    classDef exporter fill:#404063, stroke:#5D5F83;
+
+    subgraph Pipeline 2
+        R20(receiver):::receiver --> P20(processor):::processor
+
+        P20 --> E20(exporter):::exporter
+    end
+    
+    subgraph Pipeline 1
+        
+        R10(receiver):::receiver --> P10(processor):::processor
+        R11(receiver):::receiver --> P10
+
+        P10 --> E10(exporter):::exporter
+    end
+
+    P10 --> C
+
+    C{{connector}}
+
+    C --> P20

@@ -1,0 +1,6 @@
+flowchart LR
+    log0(severity: SEVERITY_NUMBER_INFO)
+    log0 --> pass("`**PASS**`")
+
+    log1(severity: SEVERITY_NUMBER_DEBUG)
+    log1 --> drop("`**DROP**`")

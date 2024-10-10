@@ -1,0 +1,16 @@
+{
+    "theme": "base",
+    "themeVariables": {
+        "primaryColor": "#51517B",
+        "primaryTextColor": "#fff",
+        "primaryBorderColor": "#707399",
+        "lineColor": "#707399",
+        "secondaryColor": "#34346c",
+        "tertiaryColor": "#34346c",
+        "tertiaryBorderColor": "#707399",
+        "tertiaryTextColor": "#fff",
+        "fontFamily": "monospace",
+        "fontSize": "8px"
+    },
+    "themeCSS": ".node .label { text-align: left; }"
+}
