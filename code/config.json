@@ -10,7 +10,7 @@
         "tertiaryBorderColor": "#707399",
         "tertiaryTextColor": "#fff",
         "fontFamily": "monospace",
-        "fontSize": "8px"
+        "fontSize": "10px"
     },
-    "themeCSS": ".node .label { text-align: left; }"
+    "themeCSS": ".nodeLabel { text-align: left; }"
 }
