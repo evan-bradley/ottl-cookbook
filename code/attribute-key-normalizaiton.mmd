@@ -1,0 +1,14 @@
+flowchart LR
+    log0(attributes:
+&nbsp;&nbsp;http.request.method: GET
+&nbsp;&nbsp;server.address: example.com
+&nbsp;&nbsp;server.port: 8080
+&nbsp;&nbsp;http.response.status_code: 200
+    )
+    log1(attributes:
+&nbsp;&nbsp;http_request_method: GET
+&nbsp;&nbsp;server_address: example.com
+&nbsp;&nbsp;server_port: 8080
+&nbsp;&nbsp;http_response_status_code: 200
+    )
+    log0 --> log1
