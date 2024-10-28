@@ -1,0 +1,38 @@
+flowchart LR
+    log0(name: http.client.duration
+unit: ms 
+datapoints:
+&nbsp;&nbsp;- attributes:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http.method: GET
+&nbsp;&nbsp;buckets: 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000, 7500, 10000
+    )
+    log1(name: http.client.request.duration
+unit: s 
+datapoints:
+&nbsp;&nbsp;- attributes:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http.request.method: GET
+&nbsp;&nbsp;buckets: 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10
+    )
+    log0 --> log1
+
+    log2(unit: ms
+datapoints:
+&nbsp;&nbsp;buckets: 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000, 7500, 10000
+    )
+    log3(unit: s 
+datapoints:
+&nbsp;&nbsp;buckets: 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10
+    )
+    log2 --> log3
+
+    log4(attributes:
+&nbsp;&nbsp;&nbsp;&nbsp;http.method: GET
+    )
+    log5(attributes:
+&nbsp;&nbsp;&nbsp;&nbsp;http.request.method: GET
+    )
+    log4 --> log5
+
+    log6(name: http.client.duration)
+    log7(name: http.client.request.duration)
+    log6 --> log7
