@@ -1,0 +1,34 @@
+flowchart LR
+    log0(cache:)
+    log1(cache:
+&nbsp;&nbsp;epoch_timestamp: 1730239218,
+&nbsp;&nbsp;trace_id: 959295b148d6a8c71728ef6a3eaaef80,
+&nbsp;&nbsp;span_id: 405b51fdec8afd00,
+&nbsp;&nbsp;name: my-app,
+&nbsp;&nbsp;env: prod,
+&nbsp;&nbsp;log: stuff is broke
+    )
+    log0 --> log1
+
+    log2(body: long json string)
+    log3(body: stuff is broke)
+    log2 --> log3
+
+    log4(time: 2024-10-29T22:17:30Z)
+    log5(time: 1730240250)
+    log4 --> log5
+
+    log6(trace_id:
+span_id:
+    )
+    log7(trace_id: 959295b148d6a8c71728ef6a3eaaef80
+span_id:405b51fdec8afd00)
+    log6 --> log7
+
+
+    log8(attributes:
+    )
+    log9(attributes:
+&nbsp;&nbsp;name-env: MY-APP-PROD
+    )
+    log8 --> log9
