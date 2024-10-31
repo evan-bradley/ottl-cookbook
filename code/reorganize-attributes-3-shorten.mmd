@@ -1,0 +1,12 @@
+flowchart LR
+    log6(cache:
+&nbsp;&nbsp;k8s.pod.label.app: my-app
+&nbsp;&nbsp;k8s.pod.label.mycompany.io/arch: x86
+&nbsp;&nbsp;k8s.pod.label.environment: prod
+    )
+    log7(cache:
+&nbsp;&nbsp;app: my-app
+&nbsp;&nbsp;mycompany.io/arch: x86
+&nbsp;&nbsp;environment: prod
+    )
+    log6 --> log7

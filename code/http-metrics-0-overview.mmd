@@ -1,0 +1,16 @@
+flowchart LR
+    log0(name: http.client.duration
+unit: ms 
+datapoints:
+&nbsp;&nbsp;- attributes:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http.method: GET
+&nbsp;&nbsp;buckets: 5, 10, 25, 50
+    )
+    log1(name: http.client.request.duration
+unit: s 
+datapoints:
+&nbsp;&nbsp;- attributes:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http.request.method: GET
+&nbsp;&nbsp;buckets: 0.005, 0.01, 0.025, 0.05
+    )
+    log0 --> log1

@@ -1,0 +1,12 @@
+flowchart LR
+    log8(attributes:
+&nbsp;&nbsp;test: true
+    )
+    log9(attributes:
+&nbsp;&nbsp;k8s.pod.labels:
+&nbsp;&nbsp;&nbsp;&nbsp;app: my-app
+&nbsp;&nbsp;&nbsp;&nbsp;mycompany.io/arch: x86
+&nbsp;&nbsp;&nbsp;&nbsp;environment: prod
+&nbsp;&nbsp;test: true
+    )
+    log8 --> log9
