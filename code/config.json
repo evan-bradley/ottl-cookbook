@@ -1,15 +1,15 @@
 {
     "theme": "base",
     "themeVariables": {
-        "primaryColor": "#51517B",
-        "primaryTextColor": "#fff",
-        "primaryBorderColor": "#707399",
-        "lineColor": "#707399",
-        "secondaryColor": "#34346c",
-        "tertiaryColor": "#34346c",
-        "tertiaryBorderColor": "#707399",
-        "tertiaryTextColor": "#fff",
-        "fontFamily": "monospace",
+        "primaryColor": "#CEDEF3",
+        "primaryTextColor": "#000",
+        "primaryBorderColor": "#ADC8EB",
+        "lineColor": "#ADC8EB",
+        "secondaryColor": "#CEDEF3",
+        "tertiaryColor": "#CEDEF3",
+        "tertiaryBorderColor": "#ADC8EB",
+        "tertiaryTextColor": "#000",
+        "fontFamily": "Droid Sans Mono",
         "fontSize": "10px"
     },
     "themeCSS": ".nodeLabel { text-align: left; }"
