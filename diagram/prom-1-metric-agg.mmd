@@ -1,0 +1,29 @@
+flowchart LR
+    classDef data font-family: Roboto Mono, text-align: left;
+
+    subgraph before ["mq.node.published"]
+        DP0(attributes:
+            &nbsp;&nbsp;queue: queue-a
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+        DP1(attributes:
+            &nbsp;&nbsp;queue: queue-b
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+        DP2(attributes:
+            &nbsp;&nbsp;queue: queue-c
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+    end
+
+    subgraph after ["mq.node.published"]
+        DP3(attributes:
+            &nbsp;&nbsp;node: node-1
+            value: 3
+        ):::data
+    end
+
+    before --> after

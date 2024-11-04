@@ -1,0 +1,34 @@
+flowchart LR
+    classDef data font-family: Roboto Mono, text-align: left;
+
+    subgraph before ["Resource metrics"]
+        subgraph metric0 ["mq.queue.published"]
+        m0-dp0(attributes:
+            &nbsp;&nbsp;queue: queue-a
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+        m0-dp1(...):::data
+        end
+    end
+
+    subgraph after ["Resource metrics"]
+        subgraph metric2 ["**mq.node.published**"]
+        m2-dp0(attributes:
+            &nbsp;&nbsp;queue: queue-a
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+        m2-dp1(...):::data
+        end
+
+        subgraph metric1 ["mq.queue.published"]
+        m1-dp0(attributes:
+            &nbsp;&nbsp;queue: queue-a
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+        m1-dp1(...):::data
+        end
+    end
+    before --> after

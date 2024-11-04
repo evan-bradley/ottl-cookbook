@@ -1,0 +1,37 @@
+flowchart LR
+    classDef data font-family: Roboto Mono, text-align: left;
+
+    subgraph before ["Resource metrics"]
+        subgraph metric0 ["cluster_info"]
+        m0-dp0(**datapoint**
+            &nbsp;
+            attributes:
+            &nbsp;&nbsp;queue: queue-a
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+        end
+        r0("**resource data**
+            &nbsp;
+            attributes: {}
+        ")
+    end
+
+    subgraph after ["Resource metrics"]
+        subgraph metric1 ["cluster_info"]
+        m1-dp0(**datapoint**
+            &nbsp;
+            attributes:
+            &nbsp;&nbsp;queue: queue-a
+            &nbsp;&nbsp;node: node-1
+            value: 1
+        ):::data
+        end
+        r1("**resource data**
+            &nbsp;
+            attributes:
+            &nbsp;&nbsp;queue: queue-a
+            &nbsp;&nbsp;node: node-1
+        ")
+    end
+    before --> after
