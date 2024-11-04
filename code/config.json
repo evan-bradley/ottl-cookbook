@@ -9,7 +9,7 @@
         "tertiaryColor": "#CEDEF3",
         "tertiaryBorderColor": "#ADC8EB",
         "tertiaryTextColor": "#000",
-        "fontFamily": "Droid Sans Mono",
+        "fontFamily": "Roboto Mono",
         "fontSize": "10px"
     },
     "themeCSS": ".nodeLabel { text-align: left; }"
