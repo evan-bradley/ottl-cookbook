@@ -1,4 +1,6 @@
 flowchart LR
+    classDef small font-size: 9px;
+
     log6(name: http.client.duration)
-    log7(name: http.client.request.duration)
+    log7(name: http.client.request.duration):::small
     log6 --> log7
